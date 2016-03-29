@@ -1,5 +1,5 @@
 /*
-Очищение
+РћС‡РёС‰РµРЅРёРµ
 */
 
 .group:before,
@@ -16,7 +16,7 @@
 }
 
 /*
-Сетка
+РЎРµС‚РєР°
 */
 
 *,
@@ -34,7 +34,7 @@
 }
 
 /*
-Заголовок
+Р—Р°РіРѕР»РѕРІРѕРє
 */
 
 header {
@@ -50,7 +50,7 @@ header nav {
 }
 
 /*
-Основная секция
+РћСЃРЅРѕРІРЅР°СЏ СЃРµРєС†РёСЏ
 */
 
 .border {
@@ -67,8 +67,20 @@ header nav {
   text-align: left;
 }
 
+body {
+  background-color: #3399FF;
+}
+
+body > section {
+  background-color: #3366FF;
+}
+
+body > footer {
+  border-bottom: 3px solid black;
+}
+
 /*
-Кнопки
+РљРЅРѕРїРєРё
 */
 
 .start-button {
@@ -77,6 +89,7 @@ header nav {
   border-radius: 5px;
   margin: 16px auto;
   padding: 10px 30px;
+  background-color: #FF9900;
 }
 
 .test-button {
@@ -92,12 +105,9 @@ header nav {
 }
 
 /*
-Подвал
+РџРѕРґРІР°Р»
 */
 
 .copyright {
   padding-top: 12px;
 }
-
-
-
