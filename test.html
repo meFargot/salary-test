@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="CSS/reset.css" type="text/css"/>
+<link rel="stylesheet" href="CSS/main.css" type="text/css"/>
+
+<title>Тест: Какой зарплаты ты достоин?</title>
+
+</head>
+<body>
+
+<header class="container group">
+	<h1 class="logo">Тест: Какой зарплаты ты достоин?</h1>
+	<nav>
+	<a href="index.html">Тест заново</a>
+	<a href="help.html">Помощь</a>
+	<a href="about.html">О приложении</a>
+	</nav>
+</header>
+
+<section class="container border test">
+	<h2>Вопрос №1:</h2>
+	<p>Какое у тебя образование?</p>
+														 
+	<form name="test" action="test.php" enctype="multipart/form-data" method="post">
+	<fieldset>
+	<legend>Варианты ответа:</legend>
+	<label><input name="Q1" value="1" type="radio" checked>Образования нет.</label><br>
+	<label><input name="Q1" value="2" type="radio">Неоконченное среднее.</label><br>
+	<label><input name="Q1" value="3" type="radio">Среднее.</label><br>
+	<label><input name="Q1" value="4" type="radio">Неоконченное высшее.</label><br>
+	<label><input name="Q1" value="5" type="radio">Высшее.</label>
+	</fieldset>
+	<div class="button-area">
+	<input name="question" type="hidden" value="1">
+	<input class="test-button" type="submit" value="Далее"></div>
+	</form>
+	
+</section>
+
+<footer class="container">
+	<p class="copyright">&copy; 2016 - fargot</p>
+</footer>
+
+</body>
+</html>
