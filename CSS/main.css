@@ -1,113 +1,126 @@
-/*
-Очищение
-*/
+/* Reset */
 
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
-/*
-Сетка
-*/
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0;
-  width: 640px;
-}
-
-/*
-Заголовок
-*/
-
-header {
-  height: 33px;
-}
-
-.logo {
-  float: left;
-}
-
-header nav {
-  float: right;
-}
-
-/*
-Основная секция
-*/
-
-.border {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px 30px 5px 30px;  
-}
-
-.start {
-  text-align: center;
-}
-
-.start p {
-  text-align: left;
-}
+/* Typography */
 
 body {
-  background-color: #3399FF;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
 }
 
-body > section {
-  background-color: #3366FF;
+h1 {
+  font-size: 1.75em;
 }
 
-body > footer {
-  border-bottom: 3px solid black;
+h2 {
+  font-size: 1.25em; 
 }
 
-/*
-Кнопки
-*/
+.content p {
+  font-weight: bold;
+}
+
+/* Colors */
+
+body {
+  background-color: #f2f2f2;
+}
+
+header, footer {
+  background-color: #ff8c1a;
+}
+
+/* Grid */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  height: 35px;
+}
+
+header h1 {
+  float: left;
+  padding-left: 5px;
+}
+
+header .top-menu {
+  position: absolute;
+  top: -1px;
+  right: 15px;
+}
+
+header .top-menu a {
+  float: left;
+  border: 1px solid black;
+  padding: 1px 5px 3px 5px;
+  text-decoration: none;
+  color: black;
+  background-color: #ff751a;
+}
+
+header .top-menu a:hover {
+  background-color: #ff8533;
+}
+
+/* Content */
+
+.content {
+  border-right: 3px solid #ff8c1a;
+  border-left: 3px solid #ff8c1a;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.content p {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
 
 .start-button {
-  display: inline-block;
-  border: 1px solid #c0c0c0;
+  text-align: center;
+  width: 150px;
+  padding: 15px;
+  border: 1px solid black;
   border-radius: 5px;
-  margin: 16px auto;
-  padding: 10px 30px;
-  background-color: #FF9900;
+  margin: 15px auto 0px auto;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background-color: #ff751a;
+  font-weight: 700;
 }
 
-.test-button {
-  display: inline-block;
-  border: 1px solid #c0c0c0;
-  border-radius: 5px;
-  margin: 16px auto;
-  padding: 10px 30px;
+.start-button:hover {
+  background-color: #ff8533;
 }
 
-.button-area {
-  text-align: right;
-}
+/* Footer */
 
-/*
-Подвал
-*/
-
-.copyright {
-  padding-top: 12px;
+footer {
+  height: 35px;
+  padding-left: 8px;
+  padding-top: 8px;
 }
